@@ -10,6 +10,13 @@ public class Task3 {
      * IllegalArgumentException
      */
     public static int multiArithmeticElements(int a1, int t, int n) {
-        throw new UnsupportedOperationException();
+          int result = 0;
+          if (n == 0 || n < 0 ) {throw new UnsupportedOperationException();}
+          else {
+              int n1 = n -1;
+              int t1 = t*n1;
+              result = a1 + t1;
+          }
+          return result;
     }
 }
