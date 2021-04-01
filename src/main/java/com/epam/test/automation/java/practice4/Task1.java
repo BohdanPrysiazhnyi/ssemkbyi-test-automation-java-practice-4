@@ -4,8 +4,7 @@ public class Task1 {
 
     
     public static boolean isSorted(int[] array, SortOrder order) {
-        if (array == null) throw new IllegalArgumentException();
-        else if (order == SortOrder.ASC)
+        if (order == SortOrder.ASC)
         {
             for (int i = 0; i < array.length - 1; i++)
             {
@@ -15,7 +14,7 @@ public class Task1 {
                 }
             }
         }
-        else
+        else if
         {
             for (int i = 0; i < array.length - 1; i++)
             {
@@ -24,7 +23,8 @@ public class Task1 {
                     return false;
                 }
             }
-        }
+        } else throw new IllegalArgumentException();
+        
         return true;
     }
 }
