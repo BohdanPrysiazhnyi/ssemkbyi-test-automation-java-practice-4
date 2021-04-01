@@ -4,7 +4,7 @@ public class Task2 {
 
    
     public static int[] transform(int[] array, SortOrder order) {
-        if (IsSorted(array, order))
+        if (isSorted(array, order))
             {
                 for (int i = 0; i < array.length; i++)
                 {
