@@ -11,6 +11,6 @@ public class Task2 {
                     array[i] += i;
                 }
             }
-            return transform;
+            return array;
     }
 }
