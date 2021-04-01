@@ -4,7 +4,7 @@ public class Task1 {
 
     
     public static boolean isSorted(int[] array, SortOrder order) {
-        if (array == null) throw new NullPointerException();
+        if (array == null) throw new UnsupportedOperationException();
         else if (order == SortOrder.ASC)
         {
             for (int i = 0; i < array.length - 1; i++)
