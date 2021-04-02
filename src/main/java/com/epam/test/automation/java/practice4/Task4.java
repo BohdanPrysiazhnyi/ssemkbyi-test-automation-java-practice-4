@@ -2,14 +2,18 @@ package com.epam.test.automation.java.practice4;
 
 public class Task4 {
 
-    /**
-     * <summary>
-     * Implement code according to description of task.
-     * </summary>
-     * if set invalid arguments in method, then method must throws
-     * IllegalArgumentException
-     */
+  
     public static double sumGeometricElements(int a1, double t, int alim) {
-        throw new UnsupportedOperationException();
+       double result = 0;
+        double currentNum = a1;
+        if (t == 0 || t <0 || alim < 0) {
+            throw new IllegalArgumentException();
+        } else {
+           while (currentNum >= alim) {
+               result += currentNum;
+               currentNum *= t;
+            }
+        }
+        return result;
     }
 }
