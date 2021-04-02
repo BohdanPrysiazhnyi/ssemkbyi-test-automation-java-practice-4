@@ -12,5 +12,6 @@ public class Task3 {
                   result = a1 + currentNumber;
           }
           return result;
+        }
     }
 }
