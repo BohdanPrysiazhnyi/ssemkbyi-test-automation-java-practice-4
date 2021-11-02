@@ -7,8 +7,10 @@ public class Task4 {
         double result = 0;
         double currentValue = a1;
 
-        if (a1 < alim) {
+        if (a1 < alim || t <= 0 ) {
             throw new IllegalArgumentException();
+        } else if (t==1){
+            result = a1;
         } else {
             while (currentValue >= alim) {
                 result += currentValue;
