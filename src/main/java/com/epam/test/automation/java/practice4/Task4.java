@@ -1,5 +1,7 @@
 package com.epam.test.automation.java.practice4;
 
+import java.util.HashMap;
+
 public class Task4 {
 
 
@@ -7,14 +9,15 @@ public class Task4 {
         double result = 0;
         double currentValue = a1;
 
-        if (a1 <= alim || t <= 0 || t == 1 || t > 1) {
+        if (a1 <= alim || t <= 0 || t >= 1) {
             throw new IllegalArgumentException();
-        }  else {
+        } else {
             while (currentValue >= alim) {
                 result += currentValue;
                 currentValue *= t;
             }
         }
         return result;
+
     }
 }
